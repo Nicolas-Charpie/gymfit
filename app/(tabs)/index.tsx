@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Platform } from 'react-native';import ParallaxScrollView from '@/components/ParallaxScrollView';
+import { Image, StyleSheet, Platform } from 'react-native';
+import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
@@ -61,7 +62,12 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 150,
-    left: 0,
+    // aligne l'image au milieu
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    // taille de l'image
+    width: 200,
+    height: 200
   },
 });
